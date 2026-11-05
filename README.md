@@ -11,7 +11,7 @@ The system was built as a student assistant (HiWi) project at the Institut für 
 A line laser projects a line across the weld seam while a camera views it at an angle. Any height change on the surface shifts the line sideways in the camera image, so the shape of the line is the profile of the seam. Rotating the sample one full turn gives one profile every 0.5° around the circumference.
 
 <p align="center">
-  <img src="docs/images/measurement_principle.png" alt="Schematic of the measurement setup" width="35%">
+  <img src="docs/images/measurement_principle.png" alt="Schematic of the measurement setup" width="50%">
 </p>
 
 <div align="center">
@@ -32,7 +32,7 @@ $$
 ## Hardware
 
 <p align="center">
-  <img src="docs/images/system_overview.png" alt="Top view of the constructed system" width="60%">
+  <img src="docs/images/system_overview.png" alt="Top view of the constructed system" width="75%">
 </p>
 
 <div align="center">
@@ -122,8 +122,8 @@ This preparation step determines the camera parameters and the position of the l
 `**` is a running number (01, 02, ...), and the two images of a pose must have the same number.
 
 <p align="center">
-  <img src="docs/images/calibration_poses_camera.png" alt="Nine camera calibration images of the checkerboard in different poses" width="40%">
-  <img src="docs/images/calibration_poses_laser.png" alt="The matching nine laser line images" width="40%">
+  <img src="docs/images/calibration_poses_camera.png" alt="Nine camera calibration images of the checkerboard in different poses" width="50%">
+  <img src="docs/images/calibration_poses_laser.png" alt="The matching nine laser line images" width="50%">
 </p>
 
 <div align="center">
@@ -138,8 +138,8 @@ This preparation step determines the camera parameters and the position of the l
 2. Laser plane: the laser line in each `imgLas` image is detected with Steger's method on the undistorted image. Its viewing rays are intersected with the board plane of that pose, which gives 3D points in the camera coordinate system. A plane is fitted through the points of all poses.
 
 <p align="center">
-  <img src="docs/images/laser_plane_oblique.png" alt="Laser lines of 20 poses on the fitted laser plane, oblique view" width="40%">
-  <img src="docs/images/laser_plane_edge_on.png" alt="The same points seen along the plane, forming a single thin line" width="40%">
+  <img src="docs/images/laser_plane_oblique.png" alt="Laser lines of 20 poses on the fitted laser plane, oblique view" width="50%">
+  <img src="docs/images/laser_plane_edge_on.png" alt="The same points seen along the plane, forming a single thin line" width="50%">
 </p>
 
 <div align="center">
@@ -206,7 +206,7 @@ The Arduino also sends `MOTOR START` before `GET READY` and `MOTOR STOP` at the 
 The sketch [`stepperMotorControl/stepperMotorControl.ino`](stepperMotorControl/stepperMotorControl.ino) runs on the Arduino UNO and drives the motor through the A4988 driver with the AccelStepper library. It waits for `MotorStart` on the serial port and then turns the rotary table with a trapezoidal velocity profile. Images are only taken while the speed is constant, so the ramps do not change the angle between two images.
 
 <p align="center">
-  <img src="docs/images/velocity_profile.svg" alt="Trapezoidal velocity profile of one acquisition run: 4 s acceleration, 45 s constant speed with 720 image triggers, 4 s deceleration" width="75%">
+  <img src="docs/images/velocity_profile.svg" alt="Trapezoidal velocity profile of one acquisition run: 4 s acceleration, 45 s constant speed with 720 image triggers, 4 s deceleration" width="85%">
 </p>
 
 <div align="center">
@@ -283,7 +283,7 @@ Figure 6 shows this detection on eight real images. Each panel is a crop of the 
 
 
 <p align="center">
-  <img src="docs/images/seam_detection_roi.png" alt="Seam detection in eight ROI images" width="60%">
+  <img src="docs/images/seam_detection_roi.png" alt="Seam detection in eight ROI images" width="75%">
 </p>
 
 <div align="center">
@@ -376,7 +376,7 @@ Three samples are included, each with 30 mm top and bottom pieces (nominal lengt
 </div>
 
 <p align="center">
-  <img src="evaluations/Sample_2133_T30B30/SeamHeight.jpg" alt="Seam height and depth of sample 2133 over the circumference" width="75%">
+  <img src="evaluations/Sample_2133_T30B30/SeamHeight.jpg" alt="Seam height and depth of sample 2133 over the circumference" width="90%">
 </p>
 
 
@@ -387,7 +387,7 @@ Three samples are included, each with 30 mm top and bottom pieces (nominal lengt
 </div>
 
 <p align="center">
-  <img src="evaluations/Sample_2133_T30B30/SeamWidth.jpg" alt="Seam width of sample 2133 over one revolution" width="75%">
+  <img src="evaluations/Sample_2133_T30B30/SeamWidth.jpg" alt="Seam width of sample 2133 over one revolution" width="90%">
 </p>
 
 
@@ -398,7 +398,7 @@ Three samples are included, each with 30 mm top and bottom pieces (nominal lengt
 </div>
 
 <p align="center">
-  <img src="evaluations/Sample_2133_T30B30/Seam3D_Cylinder.jpg" alt="3D reconstruction of sample 2133 as a cylinder, seen from two sides" width="60%">
+  <img src="evaluations/Sample_2133_T30B30/Seam3D_Cylinder.jpg" alt="3D reconstruction of sample 2133 as a cylinder, seen from two sides" width="75%">
 </p>
 
 <div align="center">
@@ -410,7 +410,7 @@ Three samples are included, each with 30 mm top and bottom pieces (nominal lengt
 The offset of the two pieces can be seen in Figure 9 as a small step in the outline at the seam. It is clear in sample 2133 because its offset is the largest of the three samples: up to 0.73 mm, against 0.38 mm in samples 2121 and 2141. Figure 10 and the table below give its values over the circumference.
 
 <p align="center">
-  <img src="evaluations/Sample_2133_T30B30/SampleOffset.jpg" alt="Offset of the two pieces of sample 2133 over one revolution" width="75%">
+  <img src="evaluations/Sample_2133_T30B30/SampleOffset.jpg" alt="Offset of the two pieces of sample 2133 over one revolution" width="90%">
 </p>
 
 <div align="center">
