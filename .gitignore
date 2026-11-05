@@ -1,0 +1,11 @@
+# Windows
+desktop.ini
+Thumbs.db
+
+# MATLAB
+*.asv
+*.m~
+
+# Auswertungsergebnisse
+calibrationImages/
+references/
