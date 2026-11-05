@@ -122,8 +122,8 @@ This preparation step determines the camera parameters and the position of the l
 `**` is a running number (01, 02, ...), and the two images of a pose must have the same number.
 
 <p align="center">
-  <img src="docs/images/calibration_poses_camera.png" alt="Nine camera calibration images of the checkerboard in different poses" width="50%">
-  <img src="docs/images/calibration_poses_laser.png" alt="The matching nine laser line images" width="50%">
+  <img src="docs/images/calibration_poses_camera.png" alt="Nine camera calibration images of the checkerboard in different poses" width="49%">
+  <img src="docs/images/calibration_poses_laser.png" alt="The matching nine laser line images" width="49%">
 </p>
 
 <div align="center">
@@ -138,8 +138,8 @@ This preparation step determines the camera parameters and the position of the l
 2. Laser plane: the laser line in each `imgLas` image is detected with Steger's method on the undistorted image. Its viewing rays are intersected with the board plane of that pose, which gives 3D points in the camera coordinate system. A plane is fitted through the points of all poses.
 
 <p align="center">
-  <img src="docs/images/laser_plane_oblique.png" alt="Laser lines of 20 poses on the fitted laser plane, oblique view" width="50%">
-  <img src="docs/images/laser_plane_edge_on.png" alt="The same points seen along the plane, forming a single thin line" width="50%">
+  <img src="docs/images/laser_plane_oblique.png" alt="Laser lines of 20 poses on the fitted laser plane, oblique view" width="49%">
+  <img src="docs/images/laser_plane_edge_on.png" alt="The same points seen along the plane, forming a single thin line" width="49%">
 </p>
 
 <div align="center">
