@@ -22,10 +22,10 @@ A line laser projects a line across the weld seam while a camera views it at an 
 
 Each pixel `(u, v)` on the laser line defines a viewing ray of the camera. The 3D point is where this ray meets the calibrated laser plane `nᵀX = d`:
 
-$$
+```math
 X = s\,K^{-1}\begin{bmatrix}u\\v\\1\end{bmatrix},\qquad
 s = \frac{d}{n^{T}K^{-1}\begin{bmatrix}u & v & 1\end{bmatrix}^{T}}
-$$
+```
 
 `K` is the camera matrix. `K`, `n` and `d` all come from the calibration in Step 0.
 
