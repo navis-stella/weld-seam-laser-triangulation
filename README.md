@@ -4,7 +4,7 @@ An offline laser triangulation system that measures the geometry of circumferent
 
 All samples of this project have a diameter of 30 mm. The length of each piece varies from 15 mm to 60 mm, and the algorithm measures every combination of lengths automatically.
 
-The system was built as a student assistant (HiWi) project at the Institut für Dynamik und Schwingungen, Leibniz Universität Hannover, in support of the project *Ultraschallunterstütztes Laserstrahlschweißen* (ultrasonic-assisted laser beam welding). It runs in the lab, inside a measurement box, on samples that have already been welded.
+The system was built as a student assistant (HiWi) project at the [Institut für Dynamik und Schwingungen (IDS)](https://www.ids.uni-hannover.de/), Leibniz Universität Hannover, in support of the project *Ultraschallunterstütztes Laserstrahlschweißen* (ultrasonic-assisted laser beam welding). It runs in the lab, inside a measurement box, on samples that have already been welded.
 
 ## Measurement principle
 
